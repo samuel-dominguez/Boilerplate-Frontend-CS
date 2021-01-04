@@ -1,0 +1,43 @@
+/* ------------------------------------- */
+/* Reseteo de estilos */
+/* ------------------------------------- */
+html {
+    box-sizing: border-box;
+    font-family: sans-serif; // fallback
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+img,
+video {
+    max-width: 100%;
+    vertical-align: top;
+}

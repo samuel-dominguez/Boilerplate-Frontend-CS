@@ -1,0 +1,52 @@
+// -------------------------------------
+// Font family
+// -------------------------------------
+@function get-font-family($type) {
+    @return unquote(map-get($font__family, $type));
+}
+
+// -------------------------------------
+// Font size
+// -------------------------------------
+@function get-font-size($type) {
+    @return nth(map-get($font__size, $type), 1);
+}
+
+// -------------------------------------
+// Line height
+// -------------------------------------
+@function get-line-height($type) {
+    @return nth(map-get($font__size, $type), 2);
+}
+
+// -------------------------------------
+// Font weight
+// -------------------------------------
+@function get-font-weight($type) {
+    @return map-get($font__weight, $type);
+}
+
+// -------------------------------------
+// Layers
+// -------------------------------------
+@function get-z-index($type) {
+    @return map-get($z-index, $type);
+}
+
+// -------------------------------------
+// Colors
+// -------------------------------------
+@function color($type) {
+    @return map-get($color, $type);
+}
+
+// -------------------------------------
+// px to rem
+// -------------------------------------
+@function rem($px, $base: 16px) {
+    @if type-of($px) ==number and unit($px) == "px" {
+        @return ($px / $base) * 1rem;
+    }
+
+    @return null;
+}

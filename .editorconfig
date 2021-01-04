@@ -1,0 +1,15 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+[public/*.html]
+indent_style = space
+indent_size = 2
+
+[src/pug/*.pug]
+[*]
+indent_style = space
+indent_size = 4

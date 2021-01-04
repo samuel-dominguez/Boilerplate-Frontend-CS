@@ -1,0 +1,9 @@
+html {
+    @include font-family(body);
+    @include font-size(text-base);
+    // color: color();
+}
+
+.text-xs {
+    @include font-size(text-xs);
+}

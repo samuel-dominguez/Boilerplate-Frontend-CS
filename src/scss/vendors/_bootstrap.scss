@@ -1,0 +1,42 @@
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    2:  $spacer * 0.125,
+    4:  $spacer * 0.25,
+    8:  $spacer * 0.5,
+    12: $spacer * 0.75,
+    16: $spacer,
+    24: $spacer * 1.5, 
+    32: $spacer * 2, 
+    38: $spacer * 2.5, 
+    40: $spacer * 2.375, 
+    48: $spacer * 3, 
+    56: $spacer * 3.5, 
+    64: $spacer * 4, 
+    72: $spacer * 4.5, 
+    80: $spacer * 5,
+    88: $spacer * 5.5, 
+    96: $spacer * 6,
+    104: $spacer * 6.5
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 640px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1280px,
+    2xl: 1536px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    2xl: 1200px
+);
+
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/utilities/spacing";
+@import "../../node_modules/bootstrap/scss/utilities/display";

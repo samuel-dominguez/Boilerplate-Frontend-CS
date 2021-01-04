@@ -1,0 +1,73 @@
+// -------------------------------------
+// Colors
+// -------------------------------------
+$color: (
+    // Primarios
+    name-color-example: #00aa00
+
+    // Secundarios
+
+    // Grises
+
+    // Adicionales
+);
+
+// -------------------------------------
+// Font family
+// -------------------------------------
+$font__family: (
+    heading:    '"Inter", sans-serif',
+    body:       '"Inter", sans-serif',
+);
+
+// -------------------------------------
+// Font size
+// -------------------------------------
+$font__size: (
+    text-xs:    rem(12px) rem(16px),
+    text-sm:    rem(14px) rem(20px),
+    text-base:  rem(16px) rem(24px),
+    text-lg:    rem(18px) rem(28px),
+    text-xl:    rem(20px) rem(28px),
+    text-2xl:   rem(24px) rem(32px),
+    text-3xl:   rem(30px) rem(36px),
+    text-4xl:   rem(36px) rem(40px),
+    text-5xl:   rem(48px) rem(48px),
+    text-6xl:   rem(60px) rem(60px),
+);
+
+// -------------------------------------
+// Font weight
+// -------------------------------------
+$font__weight: (
+    light:      300,
+    regular:    400,
+    medium:     500,
+    semibold:   600,
+    bold:       700,
+);
+
+// -------------------------------------
+// Breakpoints
+// -------------------------------------
+$breakpoints: (
+    sm:     rem(640px),
+    md:     rem(768px),
+    lg:     rem(1024px),
+    xl:     rem(1280px),
+    2xl:    rem(1536px),
+);
+
+// -------------------------------------
+// Z-index
+// -------------------------------------
+$z-index: (
+    z-back:     -10,
+    z-10:       10,
+    z-20:       20,
+    z-30:       30,
+    z-40:       40,
+    z-50:       50,
+    z-100:      100,
+    z-1000:     1000,
+);

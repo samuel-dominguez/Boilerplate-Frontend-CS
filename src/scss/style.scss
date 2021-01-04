@@ -1,0 +1,33 @@
+// 01 Utils
+
+//Bootstrap utils
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Custom utils
+@import "utils/functions";
+@import "utils/variables";
+@import "utils/mixins";
+
+// 02 Vendors
+@import "vendors/bootstrap";
+@import "vendors/normalize";
+
+// 03 Base
+@import "base/reset"; 
+@import "base/colors"; 
+@import "base/helpers"; 
+@import "base/typography"; 
+
+// 04 Layout
+@import "layouts/header";
+@import "layouts/navigation";
+@import "layouts/footer";
+
+// 05 Components
+@import "components/buttons";
+
+// 06 Pages
+@import "pages/index";
+

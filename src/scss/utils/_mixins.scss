@@ -1,0 +1,75 @@
+// -------------------------------------
+// Font family
+// -------------------------------------
+@mixin font-family($type) {
+    @if map-has-key($font__family, $type) {
+        font-family: get-font-family($type);
+    } @else {
+        font-family: sans-serif; // fallback
+    }
+}
+
+// -------------------------------------
+// Font size
+// -------------------------------------
+@mixin font-size($size, $font-size: true, $line-height: true) {
+    @if ($font-size != false) {
+        font-size: get-font-size($size);
+    }
+
+    @if ($line-height != false) {
+        line-height: get-line-height($size);
+    }
+}
+
+// -------------------------------------
+// Font Weight
+// -------------------------------------
+@mixin font-weight($type) {
+    font-weight: get-font-weight($type);
+}
+
+// -------------------------------------
+// Media queries
+// -------------------------------------
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    } @else if
+        type-of($breakpoint) ==
+        number and
+        type-of($breakpoint)
+        unit($breakpoint) ==
+        "px"
+    {
+        @media screen and (min-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
+// -------------------------------------
+// Box size
+// -------------------------------------
+@mixin box($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+// -------------------------------------
+// Background cover
+// -------------------------------------
+@mixin background-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+// -------------------------------------
+// Layers
+// -------------------------------------
+@mixin z-index($type) {
+    z-index: get-z-index($type);
+}

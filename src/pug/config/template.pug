@@ -1,0 +1,37 @@
+block config
+    include variables
+
+<!DOCTYPE html>
+html(lang="es")
+    head
+        //- Metadata
+        title= `${pageTitle} | ${siteName}`
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description", content= `${pageDescription}`)
+        meta(name="keywords", content="...")
+        meta(property="og:title" content= pageTitle)
+        meta(property="og:description" content= pageDescriptionSeo)
+        meta(property="og:image" content= `${assets}/images/...`)
+        meta(property="og:url" content="https://")
+        link(rel="shortcut icon", href= `${assets}/images/favicon.ico`, type="image/x-icon")
+
+        //- Fonts
+        link(href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="")
+
+        //- Icons
+
+        //- Styles
+        link(rel="stylesheet", href= `${assets}/css/style.css`)
+    body
+        include ../includes/header 
+
+        main
+            block content
+
+            //- Contenido principal
+
+        include ../includes/footer
+
+        script(src= `${assets}/js/main.js`)

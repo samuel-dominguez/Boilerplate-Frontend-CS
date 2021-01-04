@@ -1,0 +1,21 @@
+/* ------------------------------------- */
+/* Buttons */
+/* ------------------------------------- */
+.button {
+    display: inline-block;
+    padding: rem(14px) rem(24px);
+    @include font-family(body);
+    @include font-weight(regular);
+    @include font-size(text-base);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: rem(1.5px);
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border-radius: rem(32px);
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}

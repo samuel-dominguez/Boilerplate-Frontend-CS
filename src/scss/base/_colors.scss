@@ -1,0 +1,23 @@
+:root {
+    @each $key, $val in $color {
+        --#{$key}: #{$val};
+    }
+}
+
+/* ------------------------------------- */
+/* Color text */
+/* ------------------------------------- */
+@each $key, $val in $color {
+    .#{$key} {
+        color: $val;
+    }
+}
+
+/* ------------------------------------- */
+/* Color background */
+/* ------------------------------------- */
+@each $key, $val in $color {
+    .bg-#{$key} {
+        background-color: $val;
+    }
+}
