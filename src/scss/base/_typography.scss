@@ -4,6 +4,9 @@ html {
     // color: color();
 }
 
-.text-xs {
-    @include font-size(text-xs);
+@each $key, $val in $font__size {
+    .#{$key} {
+        font-size: nth(map-get($font__size, $key), 1);
+        line-height: nth(map-get($font__size, $key), 2);
+    }
 }

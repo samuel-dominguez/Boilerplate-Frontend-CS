@@ -1,0 +1,41 @@
+// Alineación
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+// Transformacion
+.lowercase {
+    text-transform: lowercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+// Weight
+@each $key, $val in $font__weight {
+    .#{$key} {
+        font-weight: #{$val};
+    }
+}
+
+.italic {
+    font-style: italic;
+}
+
